@@ -1,4 +1,12 @@
 Qa::Application.routes.draw do
+
+  root to: 'static_pages#home'
+  resources :users, only: [:new, :create]
+  resource :sessions, only: [:destroy]
+
+  match '/about',   to: 'static_pages#about'
+  match '/home', to: 'users#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

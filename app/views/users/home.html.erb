@@ -1,0 +1,6 @@
+<% provide(:title, "Dear Prof | #{current_user.first_name}") %>
+<div class="center hero-unit" >
+<h1>Welcome, <%= current_user.first_name + " " + current_user.last_name %></h1>
+<p>To get started, you'll need to <%= link_to "add some classes", '#', class: 'badge' %>.</p>
+
+</div>

@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 gem "rubycas-client", "~> 2.3.8"
+gem 'bootstrap-sass', '2.0.0'
+gem 'net-ldap', '~>0.2.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
